@@ -1,0 +1,35 @@
+@media screen and (max-width: 567px) {
+    .header {
+        &__rest {
+            &--menu {
+                @include d-flex;
+                padding: 25px;
+            }
+        }
+
+        &__main {
+            display: none;
+        }
+
+        &__menu {
+            &--log {
+                display: none;
+            }
+
+            &--logo {
+                &__main {
+                    display: none;
+                }
+            }
+
+            &--list {
+                @include d-flex(column);
+                @include r-property;
+
+                &__img {
+                    display: none;
+                }
+            }
+        }
+    }
+}

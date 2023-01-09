@@ -1,0 +1,40 @@
+@media screen and (max-width: 567px) {
+    .header {
+        background: #252B42;
+        &__rest {
+            &--menu {
+                @include d-flex;
+                padding: 25px;
+                &--logo{
+                    color: #fff;
+                }
+            }
+        }
+
+        &__main {
+            display: none;
+        }
+
+        &__menu {
+            &--log {
+                display: none;
+            }
+
+            &--logo {
+                color: #fff;
+                &__main {
+                    display: none;
+                }
+            }
+
+            &--list {
+                @include d-flex(column);
+                @include r-property;
+
+                &__img {
+                    display: none;
+                }
+            }
+        }
+    }
+}

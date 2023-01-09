@@ -1,0 +1,74 @@
+.header {
+    &__rest {
+        &--menu {
+            display: none;
+
+            &__img {
+                @include d-flex;
+                width: 100px;
+            }
+            img{
+                cursor: pointer;
+            }
+        }
+    }
+
+    &__main {
+        @include d-flex;
+        @include h-property;
+        color: #FFFFFF;
+        background: #252B42;
+        padding: 25px;
+
+        a {
+            color: #FFFFFF;
+            cursor: pointer;
+        }
+
+        img {
+            padding-left: 10px;
+            cursor: pointer;
+        }
+    }
+
+    &__menu {
+        @include d-flex;
+        @include h-property;
+        padding: 30px 20px;
+
+        &--logo {
+            color: #252B42;
+        }
+
+        &--list {
+            @include d-flex;
+            @include h-property;
+            width: 400px;
+
+            a {
+                color: #737373;
+                cursor: pointer;
+            }
+        }
+
+        &--log {
+            @include d-flex;
+            @include h-property;
+            width: 300px;
+
+            span,
+            a {
+                color: #23A6F0;
+            }
+
+            img {
+                cursor: pointer;
+            }
+        }
+
+        &--img {
+            @include d-flex;
+            width: 100px;
+        }
+    }
+}
